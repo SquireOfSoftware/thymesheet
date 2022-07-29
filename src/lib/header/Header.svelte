@@ -19,8 +19,8 @@
 			<li class:active={$page.url.pathname === '/about'}>
 				<a sveltekit:prefetch href="/about">About</a>
 			</li>
-			<li class:active={$page.url.pathname === '/todos'}>
-				<a sveltekit:prefetch href="/todos">Todos</a>
+			<li class:active={$page.url.pathname === '/timeline'}>
+				<a sveltekit:prefetch href="/timeline">Timeline</a>
 			</li>
 		</ul>
 		<svg viewBox="0 0 2 3" aria-hidden="true">
@@ -37,6 +37,8 @@
 	header {
 		display: flex;
 		justify-content: space-between;
+		position: sticky;
+		top: 0px;
 	}
 
 	.corner {
